@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app.popup" ng-csp>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- build:css popup.css -->
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="screen">
+        <link href="bower_components/angular/angular-csp.css" type="screen">
+        <link href="bower_components/font-awesome/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/popup.css" type="screen">
+    <!-- endbuild -->
+    <title>Popup Extension</title>
+  </head>
+
+  <body>
+
+    <div ng-controller="MainController">
+        <h1>Hey! {{welcomeMsg}}</h1>
+    </div>
+
+    <!-- build:js popup.js -->
+    <!-- == Vendor -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="/scripts/app/modules/angular-underscore.min.js"></script>
+    <script src="/scripts/app/modules/ui-bootstrap-0.9.0.min.js"></script>
+    <!-- endbower -->
+
+    <!-- == User scripts -->
+    <script src="scripts/app/popup/popup.js"></script>
+    <script src="scripts/app/services/storage.js"></script>
+    <script src="scripts/app/controllers/controllers.js"></script>
+
+    <!-- endbuild -->
+  </body>
+</html>
